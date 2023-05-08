@@ -18,7 +18,7 @@ Future<void> initDependencies() async {
   //* domain layer:
   sl.registerFactory(
     () => AdviceUseCases(
-      adviceRepo: sl(),
+      adviceRepo: sl<AdviceRepoInplementation>(),
     ),
   );
 
